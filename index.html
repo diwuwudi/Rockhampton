@@ -11,7 +11,7 @@ body {
 
 /* Style the tab */
 div.tab {
-    width: 85%;
+    width: 90%;
     overflow: hidden;
     border: none;
     background-color: #f1f1f1;
@@ -53,29 +53,48 @@ div.tab button.active {
 <p>Click on the buttons inside the tabbed menu:</p>
 
 <div class="tab">
-  <button class="tablinks" onclick="openDash(event, 'Population')" id="defaultOpen">Population
+  <button class="tablinks" onclick="openDash(event, 'Population (Suburbs)')" id="defaultOpen">
+    Population (Suburbs)
+  </button>
+  <button class="tablinks" onclick="openDash(event, 'Population (General)')" id="defaultOpen">
+    Population (General)
   </button>
   <button class="tablinks" onclick="openDash(event, 'Crime Person')">
     Crime against the person</button>
   <button class="tablinks" onclick="openDash(event, 'Crime Properties')">
     Crime against properties</button>
+  <button class="tablinks" onclick="openDash(event, 'Airport')">
+    Airport</button>
 </div>
 
-<div id="Population" class="tabcontent">
-  <iframe src="https://public.tableau.com/shared/F5SQYNJRM?:display_count=no:showVizHome=no&:embed=true"
- width="1100" height="700"></iframe>
+<div id="Population (Suburbs)" class="tabcontent">
+  <iframe src="https://app.powerbi.com/view?r=eyJrIjoiYTQ4ZWFhMWEtNTI5Yy00YjAxL
+  ThlOTAtZGY0ODQyY2ZhNDRiIiwidCI6IjkyMzEzNWM0LWY1MjQtNDBhYy04MWIzLTAyZjhlZWJkMm
+  FiMSJ9" width=90% height=850></iframe>
+</div>
+
+<div id="Population (General)" class="tabcontent">
+  <iframe src="https://app.powerbi.com/view?r=eyJrIjoiZTM5NTFhYzItYjYzOC00NWNkL
+  WIyZGUtN2M1NjY5MDNhNWZhIiwidCI6IjkyMzEzNWM0LWY1MjQtNDBhYy04MWIzLTAyZjhlZWJkMm
+  FiMSJ9" width=90% height=850></iframe>
 </div>
 
 <div id="Crime Person" class="tabcontent">
-  <iframe width="1100" height="750" src="https://app.powerbi.com/view?r=eyJrIjoi
-  ZjMzOTFhNTYtYjM2Yy00YTJlLWE5ZDUtNjI4Y2YzNTQ2YmQ5IiwidCI6IjkyMzEzNWM0LWY1MjQtN
-  DBhYy04MWIzLTAyZjhlZWJkMmFiMSJ9" frameborder="0" allowFullScreen="true"></iframe>
+  <iframe width=90% height="850" src="https://app.powerbi.com/view?r=eyJrIjoiO
+  WM3YWI1ZmMtODNiZi00NmNlLTg1MmMtMzM5NDg2YWNlM2I3IiwidCI6IjkyMzEzNWM0LWY1MjQtND
+  BhYy04MWIzLTAyZjhlZWJkMmFiMSJ9" frameborder="0" allowFullScreen="true"></iframe>
 </div>
 
 <div id="Crime Properties" class="tabcontent">
-  <iframe width="1100" height="750" src="https://app.powerbi.com/view?r=eyJrIjoi
-  NTczM2VhOTYtYWMxZS00ZjdiLTlkM2UtOTZmNDY5ZTE2NWRiIiwidCI6IjkyMzEzNWM0LWY1MjQtN
-  DBhYy04MWIzLTAyZjhlZWJkMmFiMSJ9" frameborder="0" allowFullScreen="true"></iframe>
+  <iframe width=90% height="850" src="https://app.powerbi.com/view?r=eyJrIjoiZG
+  MzYjUxY2YtMjZlNi00OTAyLWEyNzItYTE0Y2NmYjk5Zjg2IiwidCI6IjkyMzEzNWM0LWY1MjQtNDB
+  hYy04MWIzLTAyZjhlZWJkMmFiMSJ9" frameborder="0" allowFullScreen="true"></iframe>
+</div>
+
+<div id="Airport" class="tabcontent">
+  <iframe width=90% height="850" src="https://app.powerbi.com/view?r=eyJrIjoiNW
+  VhMmJiYjUtZGY3OC00ODE2LThiYTYtMWNiYzZjYzI4NWY2IiwidCI6IjkyMzEzNWM0LWY1MjQtNDB
+  hYy04MWIzLTAyZjhlZWJkMmFiMSJ9" frameborder="0" allowFullScreen="true"></iframe>
 </div>
 
 <script>
